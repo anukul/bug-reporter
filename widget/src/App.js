@@ -54,8 +54,9 @@ export default function App() {
   };
 
   const handleChange = (event) => {
+    const element = event.target;
     setValues(previousValue => Object.assign({}, previousValue, {
-      [event.target.name]: event.target.value
+      [element.name]: element.value
     }))
   }
 

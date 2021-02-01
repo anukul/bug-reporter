@@ -1,3 +1,4 @@
 node_modules/
 widget/build/
 .eslintcache
+lambdas/.serverless/
