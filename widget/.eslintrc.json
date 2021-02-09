@@ -1,0 +1,38 @@
+{
+	"parser": "babel-eslint",
+	"ignorePatterns": [
+		"build/",
+		"config/",
+		"scripts/"
+	],
+	"env": {
+		"es6": true,
+		"browser": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"react-app",
+		"airbnb",
+		"plugin:react/recommended",
+		"plugin:react-hooks/recommended"
+	],
+	"plugins": [
+		"import",
+		"unused-imports"
+	],
+	"settings": {
+		"import/resolver": {
+			"node": {
+				"paths": ["src"]
+			}
+		}
+	},
+	"rules": {
+		"unused-imports/no-unused-imports": "error",
+		"react/jsx-sort-props": "error",
+		"react/jsx-max-props-per-line": [
+			"error",
+			{ "maximum": 1 }
+		]
+	}
+}
