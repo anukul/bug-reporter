@@ -59,6 +59,8 @@ provider:
 #    - exclude-me.js
 #    - exclude-me-dir/**
 
+useDotenv: true
+
 functions:
   report_bug:
     handler: report_bug.handler

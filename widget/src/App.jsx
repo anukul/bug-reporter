@@ -14,6 +14,7 @@ import { BugReport } from '@material-ui/icons';
 import { useSnackbar } from 'notistack';
 import { useScreenshot } from 'use-react-screenshot';
 import publicIp from 'public-ip';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import * as api from './api';
 
@@ -50,6 +51,7 @@ export default function App() {
   const { enqueueSnackbar } = useSnackbar();
   const [screenshot, takeScreenshot] = useScreenshot();
   const [sendScreenshot, setSendScreenshot] = React.useState(true);
+  const [showCaptcha, setShowCaptcha] = React.useState(false);
 
   const successSnackbar = (url) => (
     <Link
@@ -175,12 +177,20 @@ export default function App() {
           >
             Cancel
           </Button>
-          <Button
-            color="primary"
-            onClick={handleSubmit}
-          >
-            Submit
-          </Button>
+          {showCaptcha && (
+            <ReCAPTCHA
+              onChange={handleSubmit}
+              sitekey={process.env.REACT_APP_RECAPTCHA_KEY}
+            />
+          )}
+          {!showCaptcha && (
+            <Button
+              color="primary"
+              onClick={() => setShowCaptcha(true)}
+            >
+              Submit
+            </Button>
+          )}
         </DialogActions>
       </Dialog>
     </div>

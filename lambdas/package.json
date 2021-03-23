@@ -1,6 +1,7 @@
 {
+  "private": true,
   "scripts": {
-    "start": "serverless offline"
+    "start": "serverless offline --httpPort 5000"
   },
   "dependencies": {
     "@middy/core": "^2.0.0-alpha.2",
