@@ -65,7 +65,7 @@ export default function App() {
   );
 
   const handleClickOpen = async () => {
-    takeScreenshot(document.getElementById('body'));
+    takeScreenshot(document.getElementsByTagName('body')[0]);
     setOpen(true);
   };
 
@@ -180,7 +180,7 @@ export default function App() {
           {showCaptcha && (
             <ReCAPTCHA
               onChange={handleSubmit}
-              sitekey={process.env.REACT_APP_RECAPTCHA_KEY}
+              sitekey={process.env.RECAPTCHA_KEY}
             />
           )}
           {!showCaptcha && (

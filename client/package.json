@@ -1,0 +1,35 @@
+{
+  "name": "@vlead/bug-report",
+  "version": "0.0.0",
+  "description": "Describe @vlead/bug-report here",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "nwb build-react-app",
+    "clean": "nwb clean-app",
+    "prepublishOnly": "npm run build",
+    "start": "nwb serve-react-app",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "axios": "^0.21.1",
+    "html2canvas": "^1.0.0-rc.7",
+    "notistack": "^1.0.5",
+    "public-ip": "^4.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-google-recaptcha": "^2.1.0",
+    "use-react-screenshot": "^1.0.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "getenv": "^1.0.0",
+    "nwb": "0.25.x"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": ""
+}

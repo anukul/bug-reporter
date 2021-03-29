@@ -1,0 +1,8 @@
+html, body, #bug-report {
+  height: 100%;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
