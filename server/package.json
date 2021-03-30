@@ -9,7 +9,9 @@
     "@middy/http-json-body-parser": "^2.0.0-alpha.2",
     "@middy/validator": "^2.0.0-alpha.2",
     "@octokit/rest": "^18.0.14",
-    "getenv": "^1.0.0"
+    "aws-sdk": "^2.875.0",
+    "getenv": "^1.0.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "serverless": "^2.20.1",

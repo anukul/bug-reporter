@@ -11,9 +11,9 @@
 #
 # Happy Coding!
 
-service: vlead-widget
+service: bug-report
 # app and org for use with dashboard.serverless.com
-app: vlead-lambdas
+app: vlead
 org: anukul
 
 # You can pin your service to only deploy with a specific Serverless version

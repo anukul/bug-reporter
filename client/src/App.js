@@ -82,8 +82,7 @@ export default function App() {
   const getDescription = async () => {
     let description = '';
     if (sendScreenshot) {
-      const screenshotURL = 'https://www.vlab.co.in/images/logo.jpg';
-      description += `![screenshot](${screenshotURL})\n`;
+      description += `![screenshot](${screenshot})\n`;
     }
     //
     description += '\nSummary\n---\n';
