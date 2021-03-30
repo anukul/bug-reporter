@@ -314,6 +314,11 @@
   resolved "https://registry.yarnpkg.com/@middy/core/-/core-2.0.0-alpha.2.tgz#8884ed5305036a8bbf0b4f099d54e557225f9c3c"
   integrity sha512-y7qvwwV5isFxvDYhoM4uvLJEsoFy3mRTTrUUQd/DGhK+W1t6JrThutAxkc3C1T8OcycBoQsOH6E2f7L5KLsOoQ==
 
+"@middy/http-cors@^1.5.2":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@middy/http-cors/-/http-cors-1.5.2.tgz#ce3a9a9ce95a6c7e41f803127c1450de79bb1de1"
+  integrity sha512-B+9rZv/cO+blbZ7RgZVRMCIbpawOJtmwsQvB6ctiodpTkTkjV348FPVFVIB+MBr42zWTUPsF2HZZCiL3qTyhiA==
+
 "@middy/http-error-handler@^2.0.0-alpha.2":
   version "2.0.0-alpha.2"
   resolved "https://registry.yarnpkg.com/@middy/http-error-handler/-/http-error-handler-2.0.0-alpha.2.tgz#270890a5a2e3bed1600fbf86c719cb7677ac4961"

@@ -3,6 +3,7 @@ const middy = require('@middy/core')
 const jsonBodyParser = require('@middy/http-json-body-parser')
 const httpErrorHandler = require('@middy/http-error-handler')
 const validator = require('@middy/validator')
+const cors = require('@middy/http-cors');
 const { Octokit } = require("@octokit/rest");
 const AWS = require('aws-sdk');
 const { v4: uuid } = require('uuid');
@@ -72,6 +73,7 @@ const inputSchema = {
 const handler = middy(reportBug)
   .use(jsonBodyParser())
   .use(validator({inputSchema}))
-  .use(httpErrorHandler());
+  .use(httpErrorHandler())
+  .use(cors());
 
 module.exports = { handler }
