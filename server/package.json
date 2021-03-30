@@ -4,12 +4,12 @@
     "start": "serverless offline --httpPort 5000"
   },
   "dependencies": {
-    "@middy/core": "^2.0.0-alpha.2",
-    "@middy/http-cors": "^1.5.2",
-    "@middy/http-error-handler": "^2.0.0-alpha.2",
-    "@middy/http-json-body-parser": "^2.0.0-alpha.2",
-    "@middy/validator": "^2.0.0-alpha.2",
+    "@middy/core": "^1.5.2",
+    "@middy/http-error-handler": "^1.5.2",
+    "@middy/http-json-body-parser": "^1.5.2",
+    "@middy/validator": "^1.5.2",
     "@octokit/rest": "^18.0.14",
+    "@schibsted/middy-cors": "^0.3.0",
     "aws-sdk": "^2.875.0",
     "getenv": "^1.0.0",
     "uuid": "^8.3.2"
