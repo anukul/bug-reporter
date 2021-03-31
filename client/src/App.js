@@ -107,7 +107,7 @@ export default function App() {
   };
 
   return (
-    <div className={classes.container}>
+    <div className={classes.container} data-html2canvas-ignore="true">
       <Fab
         color="primary"
         onClick={handleClickOpen}
