@@ -1,6 +1,6 @@
 {
   "name": "@vlead/bug-report",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Describe @vlead/bug-report here",
   "main": "dist/main.js",
   "scripts": {
