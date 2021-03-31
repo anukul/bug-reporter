@@ -140,13 +140,6 @@ export default function App() {
             value={values.description || ''}
             variant="outlined"
           />
-          <Box boxShadow={3} my={2}>
-            <img
-              alt="screenshot"
-              className={classes.screenshot}
-              src={screenshot}
-            />
-          </Box>
           <Grid
             alignItems="center"
             container
@@ -163,6 +156,13 @@ export default function App() {
               <Typography color="textSecondary">Attach screenshot</Typography>
             </Grid>
           </Grid>
+          <Box boxShadow={3}>
+            <img
+              alt="screenshot"
+              className={classes.screenshot}
+              src={screenshot}
+            />
+          </Box>
           {/* <CanvasDraw */}
           {/*  brushColor="red" */}
           {/*  brushRadius={1} */}
