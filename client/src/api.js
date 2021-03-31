@@ -5,7 +5,7 @@ const api = axios.create({
 });
 
 export const reportBug = async (title, description) => {
-  const response = await api.post('/report_bug', {
+  const response = await api.post('/submit', {
     title,
     body: description,
   });
