@@ -127,7 +127,19 @@ export default function App() {
           <DialogContentText>
             Please describe the problem you are facing:
           </DialogContentText>
-          <Box boxShadow={3}>
+          <TextField
+            fullWidth
+            label="Summary"
+            margin="dense"
+            multiline
+            name="description"
+            onChange={handleChange}
+            rows={4}
+            type="text"
+            value={values.description || ''}
+            variant="outlined"
+          />
+          <Box boxShadow={3} my={2}>
             <img
               alt="screenshot"
               className={classes.screenshot}
@@ -156,18 +168,6 @@ export default function App() {
           {/*  imgSrc={screenshot} */}
           {/*  lazyRadius={0} */}
           {/* /> */}
-          <TextField
-            fullWidth
-            label="Summary"
-            margin="dense"
-            multiline
-            name="description"
-            onChange={handleChange}
-            rows={4}
-            type="text"
-            value={values.description || ''}
-            variant="outlined"
-          />
         </DialogContent>
         <DialogActions>
           <Button
