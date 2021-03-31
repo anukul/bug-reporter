@@ -9,6 +9,7 @@ const octokit = new Octokit({
 
 const [owner, repo] = getenv.string('GITHUB_REPOSITORY').split('/');
 
+// TODO: use environment variable for bucket name
 const screenshotBucket = new AWS.S3({ params: { Bucket: 'bug-reporter-screenshots' } });
 const screenshotBucketURL = 'https://bug-reporter-screenshots.s3.ap-south-1.amazonaws.com'
 

@@ -99,7 +99,8 @@ export default function App() {
 
   const handleSubmit = async () => {
     const description = await getDescription();
-    const githubIssueURL = await api.reportBug('foo', description);
+    // TODO: decide on a better issue title
+    const githubIssueURL = await api.reportBug('Bug Report', description);
     enqueueSnackbar(`GitHub issue filed at ${githubIssueURL}`, {
       action: successSnackbar(githubIssueURL),
     });
@@ -177,6 +178,7 @@ export default function App() {
             Cancel
           </Button>
           {showCaptcha && (
+            // TODO: verify recaptcha response on server
             <ReCAPTCHA
               onChange={handleSubmit}
               sitekey={process.env.RECAPTCHA_KEY}
